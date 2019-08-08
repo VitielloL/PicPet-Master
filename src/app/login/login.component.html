@@ -1,0 +1,61 @@
+<!--Div Global-->
+<div class="full h-100 d-flex">
+    <!--Div da <== esquerda -->
+    <div class="col-xl-9 col-lg-8 col-md-7 d-none d-md-block background-image text-white">
+        <!--pode tirar esse background?-->
+        <!--Div para imagens-->
+        <div class="logo col-xl-9 col-lg-10 col-md-12" style="margin-top: 35px;margin-left: 120px; margin-bottom: 10%">
+            <img style="width:73%" src="../../../assets/images/picpetcorte.png">
+            <img style="width:76%" src="../../../assets/images/save.png">
+        </div>
+    </div>
+    <!--Div da ==> Direita -->
+    <div class="col-xl-3 col-lg-4 col-md-5 text-center p-0">
+        <div class="titulo" style="margin-top: 35%;">
+            <!--Classe titulo pode retirar?-->
+        </div>
+        <div class="content col-12 mt-4">
+            <form [formGroup]="userForm">
+                <!--Usuario-->
+                <mat-form-field appearance="outline" class="col-12">
+                    <mat-label>Usuário</mat-label>
+                    <input matInput formControlName="user">
+                    <mat-icon matSuffix class="login-icon">account_circle</mat-icon>
+                </mat-form-field>
+                <!--Senha-->
+                <mat-form-field appearance="outline" class="col-12">
+                    <mat-label>Senha</mat-label>
+                    <input matInput formControlName="senha" type="password">
+                    <mat-icon matSuffix class="login-icon">vpn_key</mat-icon>
+                </mat-form-field>
+            </form>
+        </div>
+        <div class="actions-row col-12 d-flex flex-row">
+            <!--Manter conectado-->
+            <mat-checkbox color="primary" class="std-font" style="font-size: 13px;">Manter conectado</mat-checkbox>
+            <!--Esqueceu seu senha?-->
+            <a class="primary-color pb-1" style="font-size: 13px;">Esqueceu sua senha?</a>
+        </div>
+        <!--Entrar com a conta do picpet-->
+        <button (click)="fazerLogin()" class="col-10 mt-5 text-white primary-bg-color" mat-raised-button>
+      <mat-icon class="btn-icon">forward</mat-icon>Entrar
+    </button>
+        <!--Entrar com o facebook-->
+        <button (click)="fazerLogin()" class="col-10 mt-3 mb-3 text-white primary-bg-color" mat-raised-button>
+      Entrar com Facebook <!---#3b5998 cor do face-->
+    </button>
+        <!-- Cadastre-se -->
+        <p>Não tem uma conta?
+            <a [routerLink]="'registrar'"> Cadastre-se </a>
+    </div>
+</div>
+
+<!--Rodapé-->
+<footer class="footer p-4">
+    <div class="lista-footer mr-a ml-a">
+        <a class="mr-5"> <b> Fale Conosco</b> </a>
+        <a class="mr-5"> <b> Termos </b> </a>
+        <a class="mr-5"> <b> Sobre Nos </b> </a>
+        <a class="mr-5"> <b> #Hashtags </b> </a>
+    </div>
+</footer>

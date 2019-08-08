@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html { height: 0px;}
+body { margin: 0; height: 100%; font-family: 'Muli', sans-serif !important; }
+
+$primary-color: #33b5e5 !important;
+
+.primary-color {
+  color: $primary-color;
+}
+
+.primary-bg-color {
+  background: $primary-color;
+}
+
+.b-bg {
+  background: #24292e !important;
+}
+
+.login-icon {
+  width: auto !important;
+  font-size: 25px !important;
+  color: rgba(0,0,0,.54) !important;
+}
+
+.btn-icon {
+  width: auto !important;
+  font-size: 20px !important;
+}
+
+.std-font {
+  font-family: 'Muli', sans-serif !important;
+}
+
+.actions-row {
+  place-content: center space-between;
+  align-items: center;
+}
