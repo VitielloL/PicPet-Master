@@ -1,19 +1,15 @@
 <!--Div Global-->
 <div class="full h-100 d-flex">
     <!--Div da <== esquerda -->
-    <div class="col-xl-9 col-lg-8 col-md-7 d-none d-md-block background-image text-white">
-        <!--pode tirar esse background?-->
+    <div class="col-xl-9 col-lg-8 col-md-7 d-none d-md-block">
         <!--Div para imagens-->
         <div class="logo col-xl-9 col-lg-10 col-md-12" style="margin-top: 35px;margin-left: 120px; margin-bottom: 10%">
-            <img style="width:73%" src="../../../assets/images/picpetcorte.png">
+            <img style="width:70%" src="../../../assets/images/picpetcorte.png">
             <img style="width:76%" src="../../../assets/images/save.png">
         </div>
     </div>
     <!--Div da ==> Direita -->
-    <div class="col-xl-3 col-lg-4 col-md-5 text-center p-0">
-        <div class="titulo" style="margin-top: 35%;">
-            <!--Classe titulo pode retirar?-->
-        </div>
+    <div class="col-xl-3 col-lg-4 col-md-5 text-center p-0" style="margin-top:100px">
         <div class="content col-12 mt-4">
             <form [formGroup]="userForm">
                 <!--Usuario-->
@@ -37,12 +33,12 @@
             <a class="primary-color pb-1" style="font-size: 13px;">Esqueceu sua senha?</a>
         </div>
         <!--Entrar com a conta do picpet-->
-        <button (click)="fazerLogin()" class="col-10 mt-5 text-white primary-bg-color" mat-raised-button>
+        <button (click)="fazerLogin()" class="col-10 mt-3 text-white primary-bg-color" mat-raised-button>
       <mat-icon class="btn-icon">forward</mat-icon>Entrar
     </button>
         <!--Entrar com o facebook-->
-        <button (click)="fazerLogin()" class="col-10 mt-3 mb-3 text-white primary-bg-color" mat-raised-button>
-      Entrar com Facebook <!---#3b5998 cor do face-->
+        <button (click)="fazerLogin()" class="col-10 mt-3 mb-3 text-white" style="background-color:#3b5998" mat-raised-button>
+      Entrar com Facebook
     </button>
         <!-- Cadastre-se -->
         <p>Não tem uma conta?
